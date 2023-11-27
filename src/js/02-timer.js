@@ -26,8 +26,8 @@ const options = {
         if (selectedDates[0] <= new Date()) {
             iziToast.show({
                 position: 'center',
-                title: 'Sorry !',
-                message: 'Please choose a date in the future',
+                title: 'Warning!',
+                message: 'Only the dates in the future are acceptable',
             });
         } else {
             selectedNewDates = selectedDates[0].getTime();
@@ -62,7 +62,7 @@ function start() {
 
 function convertTime(ms) {
     const second = 1000
-    const minute = seconds * 60
+    const minute = second * 60
     const hour = minute * 60
     const day = hour * 24
 
