@@ -42,7 +42,7 @@ flatpickr('input#datetime-picker', options);
 function start() {
     const timer = setInterval(() => {
         const currentDate = new Date().getTime();
-        const selectedDate = selectedDates - currentDate;
+        const selectedDate = selectedNewDates - currentDate;
         startTimer(convertTime(selectedDate));
         variables.startButton.disabled = true;
         variables.input.disabled = true;
