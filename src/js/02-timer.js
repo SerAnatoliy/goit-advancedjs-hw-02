@@ -1,7 +1,7 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css'
+import 'izitoast/dist/css/iziToast.min.css';
 
 const variables = {
     input: document.querySelector('#datetime-picker'),
@@ -11,9 +11,9 @@ const variables = {
     minutes: document.querySelector('[data-minutes]'),
     seconds: document.querySelector('[data-seconds]'),
 }
-let selectedNewDates = null
-variables.startButton.disabled = true
-variables.startButton.addEventListener('click', start)
+let selectedNewDates = null;
+variables.startButton.disabled = true;
+variables.startButton.addEventListener('click', start);
 
 const options = {
     enableTime: true,
@@ -61,7 +61,7 @@ function start() {
 }
 
 function convertTime(ms) {
-    const seconds = 1000
+    const second = 1000
     const minute = seconds * 60
     const hour = minute * 60
     const day = hour * 24
